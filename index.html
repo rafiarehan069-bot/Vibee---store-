@@ -1,27 +1,29 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vibee Store</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
     background:#faf8f5;
     color:#333;
 }
 
 header{
-    text-align:center;
-    padding:30px 15px;
     background:white;
+    padding:25px;
+    text-align:center;
 }
 
 .logo{
-    font-size:35px;
+    font-size:36px;
     font-weight:bold;
     letter-spacing:2px;
 }
@@ -29,8 +31,7 @@ header{
 nav a{
     text-decoration:none;
     color:#555;
-    margin:10px;
-    font-size:15px;
+    margin:8px;
 }
 
 .hero{
@@ -39,7 +40,7 @@ nav a{
 }
 
 .hero h1{
-    font-size:40px;
+    font-size:42px;
 }
 
 .hero p{
@@ -47,25 +48,27 @@ nav a{
 }
 
 .btn{
-    display:inline-block;
     background:#333;
     color:white;
-    padding:12px 30px;
-    border-radius:25px;
+    padding:12px 28px;
+    border-radius:30px;
     text-decoration:none;
-    margin-top:20px;
+    display:inline-block;
 }
 
 .section{
     padding:30px 20px;
+}
+
+.section h2{
     text-align:center;
 }
 
 .products{
     display:flex;
-    justify-content:center;
-    gap:15px;
     flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
 
 .card{
@@ -73,65 +76,171 @@ nav a{
     width:220px;
     padding:20px;
     border-radius:20px;
+    text-align:center;
     box-shadow:0 5px 15px #ddd;
 }
 
-.card h3{
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.price{
+    font-weight:bold;
     margin:10px;
 }
 
+.shop{
+    background:#333;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
 footer{
+    background:white;
     text-align:center;
     padding:20px;
-    background:white;
-    margin-top:30px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">Vibee Store</div>
+<div class="logo">Vibee Store ✨</div>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Shop</a>
 <a href="#">Beauty</a>
-<a href="#">Fashion</a>
+<a href="#">Home</a>
+<a href="#">Gadgets</a>
 <a href="#">Contact</a>
 </nav>
+
 </header>
 
 
 <section class="hero">
-<h1>Trending Finds ✨</h1>
-<p>Discover aesthetic products you will love</p>
-
+<h1>Trending Finds</h1>
+<p>Aesthetic products for your everyday lifestyle</p>
 <a class="btn" href="#">Shop Now</a>
 </section>
 
 
 <section class="section">
 
-<h2>Explore Categories</h2>
+<h2>Beauty Collection 💄</h2>
 
 <div class="products">
 
 <div class="card">
-<h3>Beauty 💄</h3>
-<p>Must-have beauty products</p>
+<img src="https://via.placeholder.com/300">
+<h3>LED Makeup Mirror</h3>
+<p class="price">$15</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Makeup Brush Set</h3>
+<p class="price">$12</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Skincare Organizer</h3>
+<p class="price">$10</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Lip Care Set</h3>
+<p class="price">$8</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+</div>
+<section class="section">
+
+<h2>Home Collection 🏠</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Aesthetic Room Lamp</h3>
+<p class="price">$18</p>
+<a class="shop" href="#">Shop Now</a>
 </div>
 
 <div class="card">
-<h3>Fashion 👗</h3>
-<p>Latest trendy styles</p>
+<img src="https://via.placeholder.com/300">
+<h3>Storage Organizer Box</h3>
+<p class="price">$14</p>
+<a class="shop" href="#">Shop Now</a>
 </div>
 
 <div class="card">
-<h3>Gadgets ✨</h3>
-<p>Smart lifestyle finds</p>
+<img src="https://via.placeholder.com/300">
+<h3>Kitchen Gadget</h3>
+<p class="price">$9</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Home Decor Item</h3>
+<p class="price">$16</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Gadgets Collection 📱</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Wireless Earbuds</h3>
+<p class="price">$20</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Mini Portable Fan</h3>
+<p class="price">$11</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Phone Stand</h3>
+<p class="price">$7</p>
+<a class="shop" href="#">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Smart LED Light</h3>
+<p class="price">$13</p>
+<a class="shop" href="#">Shop Now</a>
 </div>
 
 </div>
@@ -140,8 +249,9 @@ footer{
 
 
 <footer>
-<p>© 2026 Vibee Store</p>
+<p>© 2026 Vibee Store | Beauty • Home • Gadgets</p>
 </footer>
 
 </body>
 </html>
+</section>
